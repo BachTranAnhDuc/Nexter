@@ -35,6 +35,10 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading__primary {
+  font-size: 4.4rem;
+  color: #f9f7f6; }
+
 .heading__secondary {
   font-size: 4.4rem;
   font-style: italic;
@@ -68,8 +72,45 @@ body {
   z-index: 2; }
 
 .header {
-  background-color: #54483a;
-  grid-column: full-start / col-end 6; }
+  padding: 4.8rem 0;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.92), rgba(16, 29, 44, 0.92)), url(../../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / col-end 6;
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(min-content, 6rem) 1fr;
+  grid-template-columns: max-content;
+  justify-content: center;
+  gap: 1.2rem 0; }
+  .header__logo {
+    height: 3.6rem;
+    justify-self: center; }
+  .header__btn {
+    justify-self: start;
+    align-self: start; }
+  .header__seenon-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.4rem;
+    color: #aaa;
+    justify-self: center;
+    display: grid;
+    gap: 0 1.2rem;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center; }
+    .header__seenon-text::before, .header__seenon-text::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 35rem;
+      background-color: currentColor; }
+  .header__seenon-logos {
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 6.4rem; }
+  .header__seenon-logo {
+    height: 2.4rem;
+    filter: brightness(70%); }
 
 .footer {
   background-color: #101d2c;
@@ -77,10 +118,43 @@ body {
   grid-row: 6 / -1;
   grid-column: full-start / full-end; }
 
+.list-nav {
+  list-style: none;
+  padding: 3.2rem;
+  margin: 3.6rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.6rem;
+  align-items: stretch; }
+  .list-nav__link:visited, .list-nav__link:link {
+    display: block;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all 0.3s; }
+  .list-nav__link:hover, .list-nav__link:active {
+    background-color: rgba(255, 255, 255, 0.05); }
+
+.copyright {
+  text-align: center;
+  margin-bottom: 4.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #fff; }
+
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex; }
+  .sidebar__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: #fff; }
 
 .realtors {
   background-color: #101d2c;
@@ -149,6 +223,14 @@ body {
   .btn__home {
     grid-area: 4 / 1 / 5 / -1;
     justify-self: stretch; }
+
+.btn-side {
+  border: none;
+  background-color: inherit;
+  margin-top: 3.2rem;
+  align-self: flex-start;
+  flex: 1;
+  cursor: pointer; }
 
 .feature {
   display: grid;

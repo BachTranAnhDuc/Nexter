@@ -5,3 +5,50 @@
   grid-row: 6 / -1;
   grid-column: full-start / full-end;
 }
+
+.list-nav {
+  list-style: none;
+  padding: 3.2rem;
+  margin: 3.6rem;
+  text-align: center;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+  gap: 1.6rem;
+  align-items: stretch;
+
+  &__item {
+    // align-self: stretch;
+  }
+
+  &__link {
+    &:visited,
+    &:link {
+      display: block;
+      text-decoration: none;
+      padding: 1.6rem 3.2rem;
+      color: #fff;
+      font-family: $font-display;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 4.8rem;
+
+  font-family: $font-display;
+  font-size: 1.4rem;
+  color: #fff;
+}

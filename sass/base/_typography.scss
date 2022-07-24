@@ -13,6 +13,9 @@ body {
 
 .heading__primary {
   @extend %heading;
+
+  font-size: 4.4rem;
+  color: $color-grey-light-1;
 }
 
 .heading__secondary {

@@ -22,3 +22,15 @@
     justify-self: stretch;
   }
 }
+
+.btn-side {
+  border: none;
+  background-color: inherit;
+  margin-top: 3.2rem;
+
+  align-self: flex-start;
+  // justify-self: center;
+  flex: 1;
+
+  cursor: pointer;
+}

@@ -15,8 +15,34 @@
     <title>nexter &mdash; your home, your freedom</title>
   </head>
   <body class="container">
-    <section class="sidebar">Side</section>
-    <header class="header">Header</header>
+    <section class="sidebar">
+      <button class="btn-side">
+        <svg class="sidebar__icon">
+          <use xlink:href="img/fontawesome/solid.svg#bars"></use>
+        </svg>
+      </button>
+    </section>
+    <header class="header">
+      <img src="img/logo.png" alt="logo" class="header__logo" />
+
+      <h3 class="heading__tertiary">Your own home</h3>
+      <h1 class="heading__primary">The ultimate personal freedom</h1>
+
+      <button class="btn header__btn">View our propoties</button>
+
+      <div class="header__seenon-text">As seen on</div>
+
+      <div class="header__seenon-logos">
+        <img src="img/logo-bbc.png" alt="bbc" class="header__seenon-logo" />
+        <img src="img/logo-forbes.png" alt="bbc" class="header__seenon-logo" />
+        <img
+          src="img/logo-techcrunch.png"
+          alt="bbc"
+          class="header__seenon-logo"
+        />
+        <img src="img/logo-bi.png" alt="bbc" class="header__seenon-logo" />
+      </div>
+    </header>
     <section class="realtors">Realtors</section>
     <section class="features">
       <div class="feature">
@@ -399,6 +425,29 @@
         <img src="img/gal-14.jpeg" alt="gallery 14" class="gallery__img" />
       </figure>
     </section>
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+      <ul class="list-nav">
+        <li class="list-nav__item">
+          <a href="#" class="list-nav__link">Find your dream home</a>
+        </li>
+        <li class="list-nav__item">
+          <a href="#" class="list-nav__link">Request proposal</a>
+        </li>
+        <li class="list-nav__item">
+          <a href="#" class="list-nav__link"> Download home planner</a>
+        </li>
+        <li class="list-nav__item">
+          <a href="#" class="list-nav__link">Contact us</a>
+        </li>
+        <li class="list-nav__item">
+          <a href="#" class="list-nav__link">Submit your property</a>
+        </li>
+        <li class="list-nav__item">
+          <a href="#" class="list-nav__link">Come work with us!</a>
+        </li>
+      </ul>
+
+      <p class="copyright">&copy; Bach Tran Anh Duc 2022</p>
+    </footer>
   </body>
 </html>

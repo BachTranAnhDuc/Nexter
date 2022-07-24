@@ -3,6 +3,12 @@
 
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+
+  display: flex;
+
+  &__icon {
+    @include size-icon(3.2rem, 3.2rem, #fff);
+  }
 }
 
 .realtors {
