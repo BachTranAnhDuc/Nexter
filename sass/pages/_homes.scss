@@ -13,10 +13,18 @@
 }
 
 .features {
-  background-color: $color-grey-light-2;
+  // background-color: $color-grey-light-2;
 
   // grid-row: 2 / span 3;
+
+  margin: 16rem 0;
+
   grid-column: center-start / center-end;
+
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6.4rem;
 }
 
 .story {
