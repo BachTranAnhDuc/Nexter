@@ -29,22 +29,77 @@
 
 .story {
   &__pictures {
-    background-color: $color-primary;
+    background-image: linear-gradient(
+        rgba($color-primary, 0.5),
+        rgba($color-primary-dark, 0.5)
+      ),
+      url(../../img/back.jpg);
+    background-size: cover;
 
     grid-column: full-start / col-end 4;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    & > * {
+      cursor: pointer;
+    }
+
+    &--1 {
+      width: 100%;
+
+      grid-area: 2 / 2 / 6 / 6;
+    }
+
+    &--2 {
+      width: 115%;
+
+      grid-area: 4 / 4 / 6 / 7;
+
+      z-index: 20;
+    }
   }
 
   &__content {
     background-color: $color-grey-light-1;
 
     grid-column: col-start 5 / full-end;
+
+    padding: 6.4rem 8vw;
+
+    display: grid;
+
+    grid-template-rows: repeat(4, min-content);
+
+    align-content: center;
+
+    gap: 2.4rem;
   }
+
+  &__text {
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
+  // &__img {
+  //   width: 100%;
+  // }
 }
 
-.home {
-  background-color: $color-secondary;
+.homes {
+  // background-color: $color-secondary;
+
+  margin: 15rem 0;
 
   grid-column: center-start / center-end;
+
+  display: grid;
+
+  gap: 7rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .gallery {

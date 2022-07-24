@@ -1,0 +1,24 @@
+.btn {
+  border: none;
+  // border-radius: 4px;
+  background-color: $color-primary;
+  padding: 1.6rem 3.2rem;
+  display: inline-block;
+
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+
+  justify-self: start;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+
+  &__home {
+    grid-area: 4 / 1 / 5 / -1;
+    justify-self: stretch;
+  }
+}
