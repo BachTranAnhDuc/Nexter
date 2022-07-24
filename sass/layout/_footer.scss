@@ -1,0 +1,7 @@
+.footer {
+  background-color: $color-secondary;
+  padding: 2rem;
+
+  grid-row: 6 / -1;
+  grid-column: full-start / full-end;
+}

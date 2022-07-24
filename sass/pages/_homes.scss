@@ -1,0 +1,46 @@
+.sidebar {
+  background-color: $color-primary;
+
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+}
+
+.realtors {
+  background-color: $color-secondary;
+
+  // grid-row: 1 / span 2;
+  grid-column: col-start 7 / full-end;
+}
+
+.features {
+  background-color: $color-grey-light-2;
+
+  // grid-row: 2 / span 3;
+  grid-column: center-start / center-end;
+}
+
+.story {
+  &__pictures {
+    background-color: $color-primary;
+
+    grid-column: full-start / col-end 4;
+  }
+
+  &__content {
+    background-color: $color-grey-light-1;
+
+    grid-column: col-start 5 / full-end;
+  }
+}
+
+.home {
+  background-color: $color-secondary;
+
+  grid-column: center-start / center-end;
+}
+
+.gallery {
+  background-color: $color-grey-dark-1;
+
+  grid-column: full-start / full-end;
+}
