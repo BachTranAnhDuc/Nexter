@@ -158,7 +158,32 @@ body {
 
 .realtors {
   background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  grid-column: col-start 7 / full-end;
+  display: grid;
+  grid-template-rows: min-content max-content;
+  justify-content: center;
+  align-content: center;
+  gap: 2.4rem 0; }
+  .realtors h3 {
+    justify-self: center; }
+  .realtors__list {
+    display: grid;
+    gap: 4.8rem 0; }
+  .realtors__detail {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: end;
+    gap: 0 2.4rem; }
+  .realtors__sold {
+    color: #aaa;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.4rem;
+    align-self: start; }
+  .realtors__img {
+    border-radius: 50%;
+    width: 7.4rem;
+    grid-row: 1 / span 3; }
 
 .features {
   margin: 16rem 0;

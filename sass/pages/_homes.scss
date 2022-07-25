@@ -13,9 +13,58 @@
 
 .realtors {
   background-color: $color-secondary;
+  // padding: 0 3.6rem;
 
   // grid-row: 1 / span 2;
   grid-column: col-start 7 / full-end;
+
+  display: grid;
+
+  grid-template-rows: min-content max-content;
+
+  // justify-items: center;
+  justify-content: center;
+  align-content: center;
+
+  gap: 2.4rem 0;
+
+  h3 {
+    justify-self: center;
+  }
+
+  &__list {
+    display: grid;
+    gap: 4.8rem 0;
+  }
+
+  &__detail {
+    display: grid;
+
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    // align-items: center;
+    align-items: end;
+
+    gap: 0 2.4rem;
+  }
+
+  &__sold {
+    // align-self: center;
+    // align-self: stretch;
+    color: $color-grey-light-2;
+    font-family: $font-display;
+    font-size: 1.4rem;
+
+    align-self: start;
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 7.4rem;
+
+    grid-row: 1 / span 3;
+  }
 }
 
 .features {
